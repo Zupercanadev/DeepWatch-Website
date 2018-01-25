@@ -1,3 +1,10 @@
+<?php
+
+	echo "hello";
+
+?>
+
+
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
