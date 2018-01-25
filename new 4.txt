@@ -1,0 +1,42 @@
+<?php
+
+
+	include_once("db-connect.php");
+	include_once("general-utilities.php");
+	include_once("user-utilities.php");
+	
+	
+	$password = $_POST['password'];
+	$confirm_Pass = $_POST['confirm_password'];
+	
+	// Compare values.
+	if(Compare_Values($password , $confirm_Pass))
+	{
+	
+		echo "COMPARE PASSED";
+		
+		$pass_Test = Password_Strength_Test($password , 5 , 20);
+		
+		if($pass_Test == "SUCCESS")
+		{
+			echo "PASSWORD TEST PASSED";
+			
+		}
+		else
+		{
+			echo "WEAKPASSWORD";
+			//header("Loaction: ../forgot-password-reset.php?error=".$pass_Test)
+			
+		}
+		
+	
+	}
+	else
+	{
+		echo "PASSWORDS DON'T MATCH";
+		//header("Loaction: ../forgot-password-reset.php?error=PASSMISMATCH")
+	}
+
+
+
+?>
