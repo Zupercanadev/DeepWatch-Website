@@ -7,9 +7,16 @@
 		function Get_Total()
 		{
 			
+			$total_Cost = 0; 
 			
+			foreach($this->items as $product_Id => $product_Item)
+			{
+				
+				$total_Cost = $total_Cost + ($product_Item->Get_Price() * $this->qty_List[$product_Id]);
+				
+			}
 			
-			
+			return $total_Cost;
 		}
 		
 		// Add product
@@ -17,8 +24,8 @@
 		{
 		
 			// Add item to array
-			array_push($items,$product->get_Id() => $product);
-			array_push($qty_List,$product->get_Id() => 1);
+			array_push($this->items,$product->Get_Id() => $product);
+			array_push($this->qty_List,$product->Get_Id() => 1);
 		
 		}
 		
@@ -27,8 +34,8 @@
 		function Remove_Item($product)
 		{
 			
-			unset($items[$product->get_Id()]);
-			unset($qty_List[$product->get_Id()]);
+			unset($this->items[$product->Get_Id()]);
+			unset($this->qty_List[$product->Get_Id()]);
 			
 		}
 		
@@ -37,13 +44,12 @@
 		function Change_Qty($New_Qty, $product)
 		{
 			
-			$qty_List[$product->get_Id()] = $New_Qty;
+			$this->qty_List[$product->Get_Id()] = $New_Qty;
 			
 			
 		}
 	
-		
-		
+
 		// Private variables
 		private $items = array();
 		private $qty_List = array();
