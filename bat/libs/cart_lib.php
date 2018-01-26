@@ -41,9 +41,9 @@
 		{
 		
 			// Add item to array
-			array_push($this->items,$product->Get_Id() => $product);
-			array_push($this->qty_List,$product->Get_Id() => 1);
-		
+			$this->items[$product->Get_Id()] = $product;
+			$this->qty_List[$product->Get_Id()] = 1;
+	
 		}
 		
 		

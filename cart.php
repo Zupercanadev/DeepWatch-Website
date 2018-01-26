@@ -1,7 +1,6 @@
 <?php
 
-	session_start();
-	
+
 
 ?>
 
@@ -105,22 +104,6 @@
                    </tr>
                  </thead>
 				 <tbody>
-				  <tr>
-                   <td>1</td>
-                   <td>
-                     <div class="unit unit-horizontal unit-middle">
-                       <div class="unit-left"><a href="product-page.html"></a></div>
-                       <div class="unit-body"><a class="text-gray-darker" style="white-space: normal;" href="product-page.html">Single Device Monthly</a></div>
-                     </div>
-                   </td>
-                   <td>$9.97</td>
-                   <td>
-                     <div class="form-wrap box-width-1 shop-input">
-                       <input class="form-input input-append" id="form-element-stepper-1" type="number" min="0" max="300" value="1">
-                     </div>
-                   </td>
-                   <td> <a class="icon mdi mdi-close icon-md-middle icon-gray-1" href="#"></a></td>
-                  </tr>
 				 </tbody>
                </table>
               </div>
