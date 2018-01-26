@@ -4,6 +4,13 @@
 	{
 	
 		// Get total
+		function Get_Total()
+		{
+			
+			
+			
+			
+		}
 		
 		// Add product
 		function Add_Item($product)
@@ -17,10 +24,24 @@
 		
 		
 		// Remove Product
+		function Remove_Item($product)
+		{
+			
+			unset($items[$product->get_Id()]);
+			unset($qty_List[$product->get_Id()]);
+			
+		}
 		
-		// Add qty
 		
-		// Remove qty
+		// Change qty
+		function Change_Qty($New_Qty, $product)
+		{
+			
+			$qty_List[$product->get_Id()] = $New_Qty;
+			
+			
+		}
+	
 		
 		
 		// Private variables
