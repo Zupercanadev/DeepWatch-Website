@@ -112,7 +112,7 @@
 						}
 						else
 						{
-							echo "No Items In Shopping Cart";
+							echo "<tr><td>No Items In Shopping Cart</td></tr>";
 						}
 					?>
 				 
