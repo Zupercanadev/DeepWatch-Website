@@ -112,7 +112,7 @@
 						}
 						else
 						{
-							echo "<tr><td colspan='4'>No Items In Shopping Cart</td></tr>";
+							echo "<tr><td colspan='4'>No Items In Shopping Cart. To Protect Your Kids, <a href='get-deepwatch.php'> Click Here! </a></td></tr>";
 						}
 					?>
 				 
