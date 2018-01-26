@@ -202,18 +202,7 @@
                       </div>
                     </li>
                   </ul>
-				  <?php
-				  
-					if($loggedIn)
-					{
-						echo "<a href=''>Goes to buy page</a>";
-					}
-					else
-					{
-						echo "<a href=''>Add to shopping Cart</a>";
-					}
-				  
-				  ?>
+				  <a href="cart.php" class="button button-sm button-secondary button-nina">Get DeepWatch</a>
                 </div>
               </div>
             </div>
