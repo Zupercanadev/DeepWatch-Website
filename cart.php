@@ -18,7 +18,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:200,400%7CLato:300,400,300italic,700%7CMontserrat:900">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style_ssai.css">
+    <link rel="stylesheet" href="css/style_ssai8.css">
     <link rel="stylesheet" href="css/mdi.css">
     <link rel="stylesheet" href="css/fl-bigmug-line.css">
 		<!--[if lt IE 10]>
@@ -93,14 +93,13 @@
          <div class="range range-md-center">
            <div class="cell-lg-11 cell-xl-8">
              <div class="table-novi table-custom-responsive table-shop-responsive">
-               <table class="table-custom table-shop">
+               <table class="table-custom">
                  <thead>
                    <tr>
                      <th>#</th>
                      <th>Product</th>
                      <th>Price</th>
                      <th>Quantity</th>
-                     <th></th>
                    </tr>
                  </thead>
 				 <tbody>
@@ -112,7 +111,7 @@
 						}
 						else
 						{
-							echo "<tr><td colspan='4'>No Items In Shopping Cart. To Protect Your Kids, <a href='get-deepwatch.php'> Click Here! </a></td></tr>";
+							echo "<tr class='text-center'><td colspan='4'><b>No Items In Shopping Cart. To Protect Your Kids, <a href='get-deepwatch.php'> Click Here! </a></b></td></tr>";
 						}
 					?>
 				 
