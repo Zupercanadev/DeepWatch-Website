@@ -1,9 +1,21 @@
 <?php
 
+	//------------------------------------------------------------------
+	//
+	// Description: Shopping cart object. Holds customer selected items.
+	//
+	//-------------------------------------------------------------------
+
+
 	class Shopping_Cart
 	{
 	
-		// Get total
+		//------------------------------------------------
+		// 
+		// Description: Gets total value of shopping cart
+		// Return: Value of shopping cart.
+		//
+		//--------------------------------------------------
 		function Get_Total()
 		{
 			
@@ -19,7 +31,12 @@
 			return $total_Cost;
 		}
 		
-		// Add product
+		//------------------------------------------------
+		// 
+		// Description: Gets total value of shopping cart
+		// Input1: Product object representing item customer wants to add.
+		//
+		//--------------------------------------------------
 		function Add_Item($product)
 		{
 		
@@ -30,7 +47,12 @@
 		}
 		
 		
-		// Remove Product
+		//------------------------------------------------
+		// 
+		// Description: Gets total value of shopping cart
+		// Input1: Product to remove from shopping cart.
+		//
+		//--------------------------------------------------
 		function Remove_Item($product)
 		{
 			
@@ -40,7 +62,13 @@
 		}
 		
 		
-		// Change qty
+		//------------------------------------------------
+		// 
+		// Description: Gets total value of shopping cart
+		// Input1: New quantity value.
+		// Input2: Product to increase quantity of.
+		//
+		//--------------------------------------------------
 		function Change_Qty($New_Qty, $product)
 		{
 			
