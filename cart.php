@@ -104,6 +104,19 @@
                    </tr>
                  </thead>
 				 <tbody>
+					<?php
+						
+						if(isset($_SESSION["Shopping_Cart"]))
+						{
+							
+						}
+						else
+						{
+							echo "No Items In Shopping Cart";
+						}
+					?>
+				 
+				 
 				 </tbody>
                </table>
               </div>
