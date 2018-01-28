@@ -88,6 +88,10 @@
 				echo "</li>";
 
 			 ?>
+			 
+			 <li>
+				<a href="cart.php">Cart</a>
+			 </li>
          </ul>
        </div>
      </div>

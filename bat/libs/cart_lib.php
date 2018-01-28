@@ -76,6 +76,32 @@
 			
 			
 		}
+		//------------------------------------------------
+		// 
+		// Description: Gets all items in shopping cart.
+		// Return: Array of items.
+		//
+		//--------------------------------------------------
+		function Get_Items()
+		{
+			
+			return $this->items;
+			
+			
+		}
+		//------------------------------------------------
+		// 
+		// Description: Gets quantity list.
+		// Return: Array of quantities.
+		//
+		//--------------------------------------------------
+		function Get_Qty_List()
+		{
+			
+			return $this->qty_List;
+			
+			
+		}
 	
 
 		// Private variables

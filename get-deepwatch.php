@@ -202,7 +202,14 @@
                       </div>
                     </li>
                   </ul>
-				  <a href="cart.php" class="button button-sm button-secondary button-nina">Get DeepWatch</a>
+				  <form id="Single_Frm" action="bat\process_product.php" method="POST" class="small-space-top">
+					<input type="hidden" value="Single Device" name="plan_selection" id="plan_selection"/>
+					<input type="hidden" value="9.97" name="plan_price" id="plan_price"/>
+					<input type="hidden" value="Monthly" name="plan_type" id="plan_type"/>
+					<input type="hidden" value="single_monthly" name="plan_id" id="plan_id"/>
+					<input type="hidden" value="Single device monthly plan." name="plan_description" id="plan_description"/>
+				    <button class="button button-sm button-secondary button-nina">Get DeepWatch</button>
+				  <form>
                 </div>
               </div>
             </div>

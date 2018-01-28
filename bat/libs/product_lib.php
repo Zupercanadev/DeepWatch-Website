@@ -19,12 +19,13 @@
 		// Input4: Product Description.
 		//
 		//-----------------------------------------------------------------------------
-		function __construct($Input_Id, $Input_Name, $Input_Price, $Input_Description)
+		function __construct($Input_Id, $Input_Name, $Input_Price, $Input_Description, $Input_Type)
 		{
 			$this->id = $Input_Id;
 			$this->name = $Input_Name;
 			$this->price = $Input_Price;
 			$this->description = $Input_Description;
+			$this->plan_Type = $Input_Type;
 			
 		}
 		
@@ -68,12 +69,23 @@
 		{
 			return $this->description;
 		}
+		//----------------------------------------------------------------------------
+	    //
+		// Description: Gets product type e.g. Monthly/Yearly plan
+		// Return: Plan type.
+		//
+		//-----------------------------------------------------------------------------
+		function Get_Type()
+		{
+			return $this->plan_Type;
+		}
 	
 		// Private Variables
 		private $name = '';
 		private $id = '';
 		private $price = 0;
 		private $description = '';
+		private $plan_Type = '';
 	
 	}
 

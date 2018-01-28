@@ -1,6 +1,7 @@
 <?php
 
-
+	include_once("bat/libs/cart_lib.php");
+	include_once("bat/libs/product_lib.php");
 
 ?>
 
@@ -107,7 +108,30 @@
 						
 						if(isset($_SESSION["Shopping_Cart"]))
 						{
+							$session_Cart = $_SESSION["Shopping_Cart"];
+							$session_Qty_List = $session_Cart->Get_Qty_List();
+							foreach($session_Cart->Get_Items() as $key => $product)
+							{
+								echo "<tr>";
+								
+									echo "<td>";
+										//echo $product->Get_Price();
+									echo "</td>";
+									echo "<td>";
+										echo $product->Get_Name() . " " . $product->Get_Type();
+									echo "</td>";
+									echo "<td>";
+										echo $product->Get_Price();
+									echo "</td>";
+									echo "<td>";
+										echo $session_Qty_List[$product->Get_Id()];
+									echo "</td>";
+								
+								
+								echo "</tr>";
+							}
 							
+
 						}
 						else
 						{
