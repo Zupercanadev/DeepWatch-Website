@@ -5,14 +5,19 @@ $document.ready(function () {
 	{
 		e.preventDefault();
 	    
+		var allInputs = $.find(".stepper-input");
+		
+		alert(allInputs.length);
+		
         // Post using ajax		
 		$.ajax({
 			type: 'post',
 			url: '../bat/update_cart.php',
-			data: $('#update_Cart_frm').serialize(),
-			success: function () {
-				alert('Form Submitted');
-			}
+			data: allInputs,
+			success: function (data) {
+				alert(data);
+			},
+			dataType:"json";
 		});
 	})
 });

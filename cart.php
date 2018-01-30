@@ -125,7 +125,7 @@
 									echo "</td>";
 									echo "<td>";
 										echo "<div class='form-wrap box-width-1 shop-input'>";
-											echo "<input class='form-input' name='". $product->Get_Id() ."' id='". $product->Get_Id() ."' type='number' min='0' max='10' value='" . $session_Qty_List[$product->Get_Id()] . "'>";
+											echo "<input name='". $product->Get_Id() ."' id='input_Test' type='number' min='0' max='10' value='" . $session_Qty_List[$product->Get_Id()] . "'>";
 										echo "</div>";
 									echo "</td>";
 								

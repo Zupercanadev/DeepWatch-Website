@@ -5,15 +5,14 @@
 
 	include_once("libs/cart_lib.php");
 	include_once("libs/product_lib.php");
-
+	$test_Key = array();
 	foreach($_POST as $key => $value)
 	{
-		echo $key;
-		echo "in";
+		array_push($test_Key, $value);
 	}
 	
-	echo "OKAY";
+	echo json_encode($test_Key);
 	
-	return "HELLO WORLD!";
+	return $test_Key;
 
 ?>
