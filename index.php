@@ -97,7 +97,7 @@
               <p class="heading-5">Let DeepWatch do all the work so you can focus on the important things.</p>
               <div class="group-md button-group">
 				<a class="button button-default-outline button-nina" href="#deepwatch_more">learn more</a>
-				<a class="button button-secondary button-nina" href="get-deepwatch.html">Get DeepWatch Now</a>
+				<a class="button button-secondary button-nina" href="get-deepwatch.php">Get DeepWatch Now</a>
 			  </div>
             </div>
           </div>
@@ -148,7 +148,7 @@
                 <div class="box-cta-inner">
                   <h3 class="box-cta-title">Want piece of mind?</h3>
                 </div>
-                <div class="box-cta-inner"><a class="button button-secondary button-nina" href="get-deepwatch.html">Get DeepWatch Now</a></div>
+                <div class="box-cta-inner"><a class="button button-secondary button-nina" href="get-deepwatch.php#plans">Get DeepWatch Now</a></div>
               </div>
             </div>
           </div>
@@ -283,7 +283,7 @@
                 <div class="box-cta-inner">
                   <h3 class="box-cta-title">Want to protect your home?</h3>
                 </div>
-                <div class="box-cta-inner"><a class="button button-secondary button-nina" href="get-deepwatch.html">Get DeepWatch Now</a></div>
+                <div class="box-cta-inner"><a class="button button-secondary button-nina" href="get-deepwatch.php#plans">Get DeepWatch Now</a></div>
               </div>
             </div>
           </div>
@@ -465,7 +465,7 @@
                 <div class="box-cta-inner">
                   <h3 class="box-cta-title">Join hundreds of safe families</h3>
                 </div>
-                <div class="box-cta-inner"><a class="button button-secondary button-nina" href="get-deepwatch.html">Get DeepWatch Now</a></div>
+                <div class="box-cta-inner"><a class="button button-secondary button-nina" href="get-deepwatch.php#plans">Get DeepWatch Now</a></div>
               </div>
             </div>
           </div>
