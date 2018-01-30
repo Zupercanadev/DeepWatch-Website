@@ -250,11 +250,14 @@
                       </div>
                     </li>
                   </ul>
-				  <form class="small-space-top" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="hosted_button_id" value="6NGNQ8555LG2S">
-					<input type="submit" class="button button-sm button-secondary button-nina" value="Get DeepWatch" name="submit"/>
-				  </form>
+				  <form id="Single_Frm" action="bat\process_product.php" method="POST" class="small-space-top">
+					<input type="hidden" value="5 Devices" name="plan_selection" id="plan_selection"/>
+					<input type="hidden" value="19.97" name="plan_price" id="plan_price"/>
+					<input type="hidden" value="Monthly" name="plan_type" id="plan_type"/>
+					<input type="hidden" value="five_monthly" name="plan_id" id="plan_id"/>
+					<input type="hidden" value="Five devices, monthly plan." name="plan_description" id="plan_description"/>
+				    <button class="button button-sm button-secondary button-nina">Get DeepWatch</button>
+				  <form>
                 </div>
               </div>
             </div>

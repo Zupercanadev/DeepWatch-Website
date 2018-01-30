@@ -148,10 +148,13 @@
 					  echo  "<ul class='inline-list'>";
 						echo  "<li class='text-middle'>";
 						  echo "<div class='text-regular'>"; 
-							echo "<button type='submit'>Update Cart </button> Total: " . $session_Cart->Get_Total();
+							echo "<button type='submit'>Update Cart </button>";
 							echo "</form>";
 						  echo "</div>";
 						echo  "</li>";
+						echo  "<li class='text-middle'>";
+						  echo "<div id='total_Calculation_div'> <b>Total: " . $session_Cart->Get_Total() . "</b></div>";
+						echo "</li>";
 						echo  "<li class='text-middle'><a class='button form-button button-sm button-secondary button-nina' href='checkout.html'>checkout</a></li>";
 					  echo "</ul>";
 					echo  "</div>";

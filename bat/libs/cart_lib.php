@@ -28,7 +28,7 @@
 				
 			}
 			
-			return $total_Cost;
+			return round($total_Cost,2);
 		}
 		
 		//------------------------------------------------
@@ -50,14 +50,14 @@
 		//------------------------------------------------
 		// 
 		// Description: Gets total value of shopping cart
-		// Input1: Product to remove from shopping cart.
+		// Input1: Product id to remove from cart.
 		//
 		//--------------------------------------------------
 		function Remove_Item($product)
 		{
 			
-			unset($this->items[$product->Get_Id()]);
-			unset($this->qty_List[$product->Get_Id()]);
+			unset($this->items[$product]);
+			unset($this->qty_List[$product]);
 			
 		}
 		
@@ -66,13 +66,13 @@
 		// 
 		// Description: Gets total value of shopping cart
 		// Input1: New quantity value.
-		// Input2: Product to increase quantity of.
+		// Input2: Product id to increase quantity of.
 		//
 		//--------------------------------------------------
 		function Change_Qty($New_Qty, $product)
 		{
 			
-			$this->qty_List[$product->Get_Id()] = $New_Qty;
+			$this->qty_List[$product] = $New_Qty;
 			
 			
 		}

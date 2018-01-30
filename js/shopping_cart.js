@@ -7,17 +7,24 @@ $document.ready(function () {
 	    
 		var allInputs = $.find(".stepper-input");
 		
-		alert(allInputs.length);
-		
         // Post using ajax		
 		$.ajax({
 			type: 'post',
 			url: '../bat/update_cart.php',
 			data: allInputs,
 			success: function (data) {
-				alert(data);
+				if(data[1] == true)
+				{
+					location.reload();
+				}
+				else
+				{
+					$('#total_Calculation_div').empty();
+					$('#total_Calculation_div').append(data);
+				}
+			
 			},
-			dataType:"json";
+			dataType:"json"
 		});
 	})
 });

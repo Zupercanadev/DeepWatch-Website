@@ -1,18 +1,40 @@
 <?php
 
-	error_reporting(E_ALL);
-	ini_set('display_errors', 1);
-
 	include_once("libs/cart_lib.php");
 	include_once("libs/product_lib.php");
-	$test_Key = array();
-	foreach($_POST as $key => $value)
+	
+	session_start();
+	
+	$refresh = false;
+	$session_Cart = $_SESSION["Shopping_Cart"];
+	$response = array();
+	if(isset($session_Cart))
 	{
-		array_push($test_Key, $value);
+		foreach($_POST as $key => $value)
+		{
+			// Update Quantities
+			if(ctype_digit((string)$value))
+			{
+				
+				if($value <= 0)
+				{
+					$session_Cart->Remove_Item($key);
+					$refresh = true;
+				}
+				else
+				{
+					$session_Cart->Change_Qty($value,$key);
+					array_push($test_Array, $key);
+					array_push($test_Array, $value);
+				}
+				
+			}
+		}
 	}
 	
-	echo json_encode($test_Key);
+	array_push($response, $session_Cart->Get_Total());
+	array_push($response, $refresh);
 	
-	return $test_Key;
-
+	echo json_encode($response);
+	
 ?>
