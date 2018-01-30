@@ -2,13 +2,13 @@
 <html class="wide wow-animation" lang="en">
   <head>
     <!-- Site Title-->
-    <title>SSAI | DeepWatch </title>
+    <title>SSAI | About Us </title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
 	<!-- Need to add favicon here -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="Images/favicon/favicon-16x16.png" type="image/x-icon">
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:200,400%7CLato:300,400,300italic,700%7CMontserrat:900">
     <link rel="stylesheet" href="css/bootstrap.css">

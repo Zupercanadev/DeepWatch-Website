@@ -16,12 +16,13 @@
 <html class="wide wow-animation" lang="en">
   <head>
     <!-- Site Title-->
-    <title>Pricing Page</title>
+    <title>SSAI | Get Started</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<!-- Need to add favicon here -->
+	<link rel="icon" href="Images/favicon/favicon-16x16.png" type="image/x-icon">
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:200,400%7CLato:300,400,300italic,700%7CMontserrat:900">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -105,7 +106,7 @@
               </div>
               <div class="quote-boxed-main">
                 <div class="quote-boxed-text">
-                  <p>Every family needs this. Now I have piece of mind knowing what images my childeren are sending an recieving.</p>
+                  <p>Every family needs this. Now I have piece of mind knowing what images my children are sending an recieving.</p>
                 </div>
                 <div class="quote-boxed-meta">
                   <p class="quote-boxed-cite">Philip Lawrence</p>
@@ -214,7 +215,7 @@
               </div>
             </div>
             <!-- Pricing Box XL-->
-            <div class="cell-sm-6 cell-lg-3" >
+            <div class="cell-sm-6 cell-lg-3" id= "plans">
               <div class="pricing-box pricing-box-xl pricing-box-novi">
                 <div class="pricing-box-header">
 				   <h4>5 Devices</h4>
