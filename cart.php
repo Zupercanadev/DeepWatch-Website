@@ -110,12 +110,13 @@
 						{
 							$session_Cart = $_SESSION["Shopping_Cart"];
 							$session_Qty_List = $session_Cart->Get_Qty_List();
+							$counter = 1;
 							foreach($session_Cart->Get_Items() as $key => $product)
 							{
 								echo "<tr>";
 								
 									echo "<td>";
-										//echo $product->Get_Price();
+										echo $counter;
 									echo "</td>";
 									echo "<td>";
 										echo $product->Get_Name() . " " . $product->Get_Type();
@@ -131,6 +132,8 @@
 								
 								
 								echo "</tr>";
+								
+								$counter++;
 							}
 						}
 						else
@@ -153,7 +156,7 @@
 						  echo "</div>";
 						echo  "</li>";
 						echo  "<li class='text-middle'>";
-						  echo "<div id='total_Calculation_div'> <b>Total: " . $session_Cart->Get_Total() . "</b></div>";
+						  echo "<div id='total_Calculation_div' class='text-bold'>Total: $" . $session_Cart->Get_Total() . "</div>";
 						echo "</li>";
 						echo  "<li class='text-middle'><a class='button form-button button-sm button-secondary button-nina' href='checkout.html'>checkout</a></li>";
 					  echo "</ul>";

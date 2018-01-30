@@ -20,7 +20,7 @@ $document.ready(function () {
 				else
 				{
 					$('#total_Calculation_div').empty();
-					$('#total_Calculation_div').append(data);
+					$('#total_Calculation_div').append("Total: $" + data[0]);
 				}
 			
 			},
