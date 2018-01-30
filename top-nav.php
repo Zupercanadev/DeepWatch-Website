@@ -45,18 +45,23 @@
 				echo " <li><a href='support-home.php'>Support</a>";
 			}
 		   
-			echo "</li>";
-			
-			if(strpos($current_page , "get-deepwatch") != 0)
+			if(!isset($_SESSION['userDetails']['Email']))
 			{
-				echo "<li class='active'><a href='get-deepwatch.php'>Get Started</a>";
-			}
-			else
-			{
-				echo " <li><a href='get-deepwatch.php'>Get Started</a>";
-			}
+				
+				echo "</li>";
+				
+				if(strpos($current_page , "get-deepwatch") != 0)
+				{
+					echo "<li class='active'><a href='get-deepwatch.php'>Get Started</a>";
+				}
+				else
+				{
+					echo " <li><a href='get-deepwatch.php'>Get Started</a>";
+				}
 		   
-			echo "</li>";
+				echo "</li>";
+			}
+			
 			
 		   ?>
 		   
@@ -90,6 +95,7 @@
 			 ?>
 			 
 			 <li>
+				<!-- TODO: Change this to a shopping cart icon and display the number of items in cart -->
 				<a href="cart.php">Cart</a>
 			 </li>
          </ul>

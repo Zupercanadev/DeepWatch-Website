@@ -16,11 +16,23 @@
 	
 	if(isset($_SESSION["Shopping_Cart"]))
 	{
+		
 		$session_Cart = $_SESSION["Shopping_Cart"];
-		$session_Cart->Add_Item($selected_Plan);
+		$cart_Items = $session_Cart->Get_Items();
+		
+		// If item exists in cart, Add 1 to current quantity.
+		if(!isset($cart_Items[$selected_Plan->Get_Id()]))
+		{
+			$session_Cart->Add_Item($selected_Plan);
+		}
+		else
+		{
+			$current_Count = $session_Cart->Get_Product_Qty($selected_Plan);
+			$session_Cart->Change_Qty(($current_Count + 1),$selected_Plan);
+		}
+		
 		$_SESSION["Shopping_Cart"] = $session_Cart;
 		
-		// TODO increase quantity if item exists.
 	}
 	else
 	{

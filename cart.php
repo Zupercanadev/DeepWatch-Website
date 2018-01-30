@@ -19,7 +19,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:200,400%7CLato:300,400,300italic,700%7CMontserrat:900">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style_ssai8.css">
+    <link rel="stylesheet" href="css/style_ssai24.css">
     <link rel="stylesheet" href="css/mdi.css">
     <link rel="stylesheet" href="css/fl-bigmug-line.css">
 		<!--[if lt IE 10]>
@@ -105,7 +105,7 @@
                  </thead>
 				 <tbody>
 					<?php
-						
+						echo "<form action='bat\update_cart.php?' method='POST' id='update_Cart_frm'>";
 						if(isset($_SESSION["Shopping_Cart"]))
 						{
 							$session_Cart = $_SESSION["Shopping_Cart"];
@@ -124,25 +124,39 @@
 										echo $product->Get_Price();
 									echo "</td>";
 									echo "<td>";
-										echo $session_Qty_List[$product->Get_Id()];
+										echo "<div class='form-wrap box-width-1 shop-input'>";
+											echo "<input class='form-input' name='". $product->Get_Id() ."' id='". $product->Get_Id() ."' type='number' min='0' max='10' value='" . $session_Qty_List[$product->Get_Id()] . "'>";
+										echo "</div>";
 									echo "</td>";
 								
 								
 								echo "</tr>";
 							}
-							
-
 						}
 						else
 						{
 							echo "<tr class='text-center'><td colspan='4'><b>No Items In Shopping Cart. To Protect Your Kids, <a href='get-deepwatch.php'> Click Here! </a></b></td></tr>";
 						}
 					?>
-				 
-				 
 				 </tbody>
                </table>
               </div>
+			   <?php 
+				if(isset($_SESSION["Shopping_Cart"]))
+				{
+					echo "<div class='cells-sm-5 cell-lg-6 cell-xl-5 text-sm-right small-space-top'>";
+					  echo  "<ul class='inline-list'>";
+						echo  "<li class='text-middle'>";
+						  echo "<div class='text-regular'>"; 
+							echo "<button type='submit'>Update Cart </button> Total: " . $session_Cart->Get_Total();
+							echo "</form>";
+						  echo "</div>";
+						echo  "</li>";
+						echo  "<li class='text-middle'><a class='button form-button button-sm button-secondary button-nina' href='checkout.html'>checkout</a></li>";
+					  echo "</ul>";
+					echo  "</div>";
+				}
+			  ?>
             </div>
           </div>
         </div>
@@ -291,6 +305,7 @@
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+	<script src="js/shopping_cart.js"></script>
 	<script src="js/custom_home.js"></script>
   </body>
 </html>

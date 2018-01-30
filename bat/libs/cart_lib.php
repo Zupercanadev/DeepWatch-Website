@@ -102,6 +102,25 @@
 			
 			
 		}
+		//------------------------------------------------
+		// 
+		// Description: Gets quantity count.
+		// Return: Value of selected quantity.
+		//
+		//--------------------------------------------------
+		function Get_Product_Qty($product)
+		{
+			
+			$count = $this->qty_List[$product->Get_Id()];
+			
+			if(!isset($count))
+			{
+				return 0;
+			}
+			
+			return $count;
+			
+		}
 	
 
 		// Private variables
