@@ -30,6 +30,8 @@
 				
 			}
 		}
+		
+		$_SESSION["Shopping_Cart"] = $session_Cart;
 	}
 	
 	array_push($response, $session_Cart->Get_Total());
