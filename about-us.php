@@ -154,8 +154,6 @@
                   <ul class="list-inline list-team">
                     <li><a class="icon icon-sm-bigger icon-gray-1 mdi mdi-facebook" href="#"></a></li>
                     <li><a class="icon icon-sm-bigger icon-gray-1 mdi mdi-twitter" href="#"></a></li>
-                    <li><a class="icon icon-sm-bigger icon-gray-1 mdi mdi-instagram" href="#"></a></li>
-                    <li><a class="icon icon-sm-bigger icon-gray-1 mdi mdi-google-plus" href="#"></a></li>
                     <li><a class="icon icon-sm-bigger icon-gray-1 mdi mdi-linkedin" href="#"></a></li>
                   </ul>
                 </div>
@@ -171,8 +169,6 @@
                   <ul class="list-inline list-team">
                     <li><a class="icon icon-sm-bigger icon-gray-1 mdi mdi-facebook" href="#"></a></li>
                     <li><a class="icon icon-sm-bigger icon-gray-1 mdi mdi-twitter" href="#"></a></li>
-                    <li><a class="icon icon-sm-bigger icon-gray-1 mdi mdi-instagram" href="#"></a></li>
-                    <li><a class="icon icon-sm-bigger icon-gray-1 mdi mdi-google-plus" href="#"></a></li>
                     <li><a class="icon icon-sm-bigger icon-gray-1 mdi mdi-linkedin" href="#"></a></li>
                   </ul>
                 </div>

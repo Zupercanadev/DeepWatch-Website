@@ -171,7 +171,7 @@
                     </div>
                   </form>
 				  or
-				  <p><a class="button button-secondary button-nina" href="register.php">Sign Up</a></p>
+				  <p><a class="button button-secondary button-nina" href="get-deepwatch.php">Get Deepwatch</a></p>
 				  <p><a href="forgot-password.php">Forgot Password?</a></p>
                 </div>
               </div>
