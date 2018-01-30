@@ -214,7 +214,7 @@
               </div>
             </div>
             <!-- Pricing Box XL-->
-            <div class="cell-sm-6 cell-lg-3" id= "plans">
+            <div class="cell-sm-6 cell-lg-3" >
               <div class="pricing-box pricing-box-xl pricing-box-novi">
                 <div class="pricing-box-header">
 				   <h4>5 Devices</h4>
