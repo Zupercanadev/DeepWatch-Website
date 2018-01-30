@@ -670,7 +670,7 @@ mark,
 }
 
 .fullwidth-page .page-footer p.right a:hover {
-  color: #015DB8;
+  color: #ed1c94;
 }
 
 .fullwidth-page * + .button {
@@ -885,17 +885,6 @@ section {
 
 .page-loader .page-loader-body-support:before {
   content: 'How can we help?';
-  display: block;
-  margin-bottom: 26px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  line-height: 1;
-  font-weight: 900;
-  text-align: center;
-  color: #00007A;
-}
-.page-loader .page-loader-body-buy:before {
-  content: 'We are here for your family';
   display: block;
   margin-bottom: 26px;
   font-family: "Montserrat", sans-serif;
@@ -2784,7 +2773,7 @@ section {
 }
 
 .bg-image-9 {
-  background-image: url("../images/Stock/family.jpg");
+  background-image: url("../images/bg-10.jpg");
 }
 
 .bg-image-10 {
@@ -6803,7 +6792,7 @@ textarea.form-input.form-input-lg {
 }
 
 .page .icon-primary {
-  color: #0195DD;
+  color: #981df0;
 }
 
 .page .icon-secondary {
@@ -6853,7 +6842,7 @@ textarea.form-input.form-input-lg {
 }
 
 .page a.icon-gray-1:hover {
-  color: #ed1c94;
+  color: #015AB8;
 }
 
 .page a.icon-gray-light:hover {
@@ -9969,7 +9958,7 @@ textarea.form-input.form-input-lg {
 .pricing-box-header {
   padding: 25px 10px;
   color: #fff;
-  background-color: #00067E;
+  background-color: #981df0;
   border-top-right-radius: inherit;
   border-top-left-radius: inherit;
   transition: .3s ease-out all;
@@ -10011,7 +10000,7 @@ textarea.form-input.form-input-lg {
 }
 
 .desktop .pricing-box .pricing-box-header {
-  background-color: #00067E;
+  background-color: #ed1c94;
 }
 
 .desktop .pricing-box-primary,
@@ -10021,7 +10010,7 @@ textarea.form-input.form-input-lg {
 
 .desktop .pricing-box-primary .pricing-box-header,
 .desktop .pricing-box:hover .pricing-box-header {
-  background-color: #0195DD;
+  background-color: #981df0;
 }
 
 * + .pricing-box-price {
@@ -10536,12 +10525,12 @@ textarea.form-input.form-input-lg {
   font-family: 'Material Design Icons';
   font-size: 45px;
   line-height: .8;
-  color: #00067E;
+  color: #ed1c94;
 }
 
 .quote-boxed-cite {
   font-weight: 400;
-  color: #00067E;
+  color: #981df0;
 }
 
 .quote-boxed-small {
@@ -11317,14 +11306,6 @@ textarea.form-input.form-input-lg {
 @media (max-width: 767px) {
   .image-default img {
     max-width: 360px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media (max-width: 767px) {
-  .image-small img {
-    max-width: 25px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -22973,7 +22954,7 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
   margin-top: -20px;
   z-index: 10;
   cursor: pointer;
-  background: #0195DD;
+  background: #ed1c94;
   color: #fff;
   transition: .33s;
 }
@@ -22984,7 +22965,7 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
 }
 
 .owl-prev:hover, .owl-next:hover {
-  background: #00067E;
+  background: #981df0;
 }
 
 .owl-prev {
@@ -23025,11 +23006,11 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
 }
 
 .owl-dot:hover, .owl-dot:focus {
-  background-color: #0195DD;
+  background-color: #981df0;
 }
 
 .owl-dot.active {
-  background-color: #00067E;
+  background-color: #981df0;
 }
 
 .owl-dot + .owl-dot {
@@ -24964,7 +24945,7 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
 }
 
 .rd-navbar-fixed .rd-navbar-nav li:hover > a, .rd-navbar-fixed .rd-navbar-nav li.active > a, .rd-navbar-fixed .rd-navbar-nav li.opened > a {
-  background: #015ab8;
+  background: #981df0;
   color: #fff;
 }
 
@@ -34035,13 +34016,9 @@ img.mfp-img {
     margin: 0 auto;
 	
 }
-.x-small-space-top
+.small-space
 {
-	margin-top: 15px;
-}
-.small-space-top
-{
-	margin-top: 30px;
+	padding-top: 30px;
 }
 .x-small-space
 {
@@ -34057,60 +34034,6 @@ img.mfp-img {
 {
 	color: #fff;
 }
-.sml-space-right
-{
-	padding-right: 5px;
-}
-.text-blue-1
-{
-	color: #57B9E8;
-}
-.space-left
-{
-	margin-left: 15px;
-}
-.align-center
-{
-	margin: 0px auto;    
-}
-.lrg-space-left
-{
-	margin-left: 70px;
-}
-.space-left
-{
-	margin-left: 20px;
-}
-.float-right
-{
-	float: right;
-}
-.float-left
-{
-	float: left;
-}
-.form-error
-{
-
-	color: red; 
-	
-}
-.small-icon
-{
-	width: 45px;
-	height: 44px;
-}
-.medium-icon
-{
-	width: 50px;
-	height: 50px;
-}
-.x-small-icon
-{
-	width: 20px;
-	height: 20px;
-}
-
 /*
 *
 * Fonts

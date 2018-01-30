@@ -670,7 +670,7 @@ mark,
 }
 
 .fullwidth-page .page-footer p.right a:hover {
-  color: #ed1c94;
+  color: #015DB8;
 }
 
 .fullwidth-page * + .button {
@@ -885,6 +885,17 @@ section {
 
 .page-loader .page-loader-body-support:before {
   content: 'How can we help?';
+  display: block;
+  margin-bottom: 26px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 900;
+  text-align: center;
+  color: #00007A;
+}
+.page-loader .page-loader-body-buy:before {
+  content: 'We are here for your family';
   display: block;
   margin-bottom: 26px;
   font-family: "Montserrat", sans-serif;
@@ -2773,7 +2784,7 @@ section {
 }
 
 .bg-image-9 {
-  background-image: url("../images/bg-10.jpg");
+  background-image: url("../images/Stock/family.jpg");
 }
 
 .bg-image-10 {
@@ -6792,7 +6803,7 @@ textarea.form-input.form-input-lg {
 }
 
 .page .icon-primary {
-  color: #981df0;
+  color: #0195DD;
 }
 
 .page .icon-secondary {
@@ -6842,7 +6853,7 @@ textarea.form-input.form-input-lg {
 }
 
 .page a.icon-gray-1:hover {
-  color: #015AB8;
+  color: #ed1c94;
 }
 
 .page a.icon-gray-light:hover {
@@ -9958,7 +9969,7 @@ textarea.form-input.form-input-lg {
 .pricing-box-header {
   padding: 25px 10px;
   color: #fff;
-  background-color: #981df0;
+  background-color: #00067E;
   border-top-right-radius: inherit;
   border-top-left-radius: inherit;
   transition: .3s ease-out all;
@@ -10000,7 +10011,7 @@ textarea.form-input.form-input-lg {
 }
 
 .desktop .pricing-box .pricing-box-header {
-  background-color: #ed1c94;
+  background-color: #00067E;
 }
 
 .desktop .pricing-box-primary,
@@ -10010,7 +10021,7 @@ textarea.form-input.form-input-lg {
 
 .desktop .pricing-box-primary .pricing-box-header,
 .desktop .pricing-box:hover .pricing-box-header {
-  background-color: #981df0;
+  background-color: #0195DD;
 }
 
 * + .pricing-box-price {
@@ -10525,12 +10536,12 @@ textarea.form-input.form-input-lg {
   font-family: 'Material Design Icons';
   font-size: 45px;
   line-height: .8;
-  color: #ed1c94;
+  color: #00067E;
 }
 
 .quote-boxed-cite {
   font-weight: 400;
-  color: #981df0;
+  color: #00067E;
 }
 
 .quote-boxed-small {
@@ -11306,6 +11317,14 @@ textarea.form-input.form-input-lg {
 @media (max-width: 767px) {
   .image-default img {
     max-width: 360px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 767px) {
+  .image-small img {
+    max-width: 25px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -22954,7 +22973,7 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
   margin-top: -20px;
   z-index: 10;
   cursor: pointer;
-  background: #ed1c94;
+  background: #0195DD;
   color: #fff;
   transition: .33s;
 }
@@ -22965,7 +22984,7 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
 }
 
 .owl-prev:hover, .owl-next:hover {
-  background: #981df0;
+  background: #00067E;
 }
 
 .owl-prev {
@@ -23006,11 +23025,11 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
 }
 
 .owl-dot:hover, .owl-dot:focus {
-  background-color: #981df0;
+  background-color: #0195DD;
 }
 
 .owl-dot.active {
-  background-color: #981df0;
+  background-color: #00067E;
 }
 
 .owl-dot + .owl-dot {
@@ -24945,7 +24964,7 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
 }
 
 .rd-navbar-fixed .rd-navbar-nav li:hover > a, .rd-navbar-fixed .rd-navbar-nav li.active > a, .rd-navbar-fixed .rd-navbar-nav li.opened > a {
-  background: #981df0;
+  background: #015ab8;
   color: #fff;
 }
 
@@ -32939,12 +32958,12 @@ html[dir='rtl'] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
   font-size: 28px;
   font-family: 'Material Design Icons';
   cursor: pointer;
-  color: #ed1c94;
+  color:#0188D5;
   transition: .3s all ease;
 }
 
 .stepper-arrow:hover {
-  color: #981df0;
+  color: #001185;
 }
 
 .stepper-arrow.up {
@@ -34016,9 +34035,13 @@ img.mfp-img {
     margin: 0 auto;
 	
 }
-.small-space
+.x-small-space-top
 {
-	padding-top: 30px;
+	margin-top: 15px;
+}
+.small-space-top
+{
+	margin-top: 30px;
 }
 .x-small-space
 {
@@ -34034,6 +34057,60 @@ img.mfp-img {
 {
 	color: #fff;
 }
+.sml-space-right
+{
+	padding-right: 5px;
+}
+.text-blue-1
+{
+	color: #57B9E8;
+}
+.space-left
+{
+	margin-left: 15px;
+}
+.align-center
+{
+	margin: 0px auto;    
+}
+.lrg-space-left
+{
+	margin-left: 70px;
+}
+.space-left
+{
+	margin-left: 20px;
+}
+.float-right
+{
+	float: right;
+}
+.float-left
+{
+	float: left;
+}
+.form-error
+{
+
+	color: red; 
+	
+}
+.small-icon
+{
+	width: 45px;
+	height: 44px;
+}
+.medium-icon
+{
+	width: 50px;
+	height: 50px;
+}
+.x-small-icon
+{
+	width: 20px;
+	height: 20px;
+}
+
 /*
 *
 * Fonts
