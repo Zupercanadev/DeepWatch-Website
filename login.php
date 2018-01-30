@@ -54,7 +54,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:200,400%7CLato:300,400,300italic,700%7CMontserrat:900">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style_ssai12.css">
+    <link rel="stylesheet" href="css/style_ssai.css">
     <link rel="stylesheet" href="css/mdi.css">
     <link rel="stylesheet" href="css/fl-bigmug-line.css">
 		<!--[if lt IE 10]>
@@ -171,7 +171,7 @@
                     </div>
                   </form>
 				  or
-				  <p><a class="button button-secondary button-nina" href="get-deepwatch.php">Get Deepwatch</a></p>
+				  <p><a class="button button-secondary button-nina" href="get-deepwatch.php#plans">Get Deepwatch</a></p>
 				  <p><a href="forgot-password.php">Forgot Password?</a></p>
                 </div>
               </div>

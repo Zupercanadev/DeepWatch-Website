@@ -143,7 +143,7 @@
         </div>
       </section>
       <section class="section section-lg bg-white text-center">
-        <div class="shell shell-wide">
+        <div class="shell shell-wide" >
           <h3>Monthly Plans</h3>
           <div class="divider divider-default"></div>
 		  <table class="align-center sml-space-top">
@@ -160,7 +160,7 @@
 				 <b>Coming soon:</b>
 				</td>
 			    <td> 
-					<figure class="image-small"><img src="images/Stock/mac_icon.ico" alt="" width="30" height="30"/>
+					<figure class="image-small"><img src="images/Stock/mac_icon.ico" alt="" width="30" height="30" />
 						<img src="images/Stock/android_icon.png" alt="" width="35" height="35"/> 
 						<img src="images/Stock/ios_icon.png" alt="" width="35" height="35"/>
 					</figure>
@@ -214,7 +214,7 @@
               </div>
             </div>
             <!-- Pricing Box XL-->
-            <div class="cell-sm-6 cell-lg-3">
+            <div class="cell-sm-6 cell-lg-3" id= "plans">
               <div class="pricing-box pricing-box-xl pricing-box-novi">
                 <div class="pricing-box-header">
 				   <h4>5 Devices</h4>

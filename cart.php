@@ -19,7 +19,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:200,400%7CLato:300,400,300italic,700%7CMontserrat:900">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style_ssai24.css">
+    <link rel="stylesheet" href="css/style_ssai.css">
     <link rel="stylesheet" href="css/mdi.css">
     <link rel="stylesheet" href="css/fl-bigmug-line.css">
 		<!--[if lt IE 10]>
