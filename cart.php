@@ -106,7 +106,7 @@
 				 <tbody>
 					<?php
 						echo "<form action='bat\update_cart.php?' method='POST' id='update_Cart_frm'>";
-						if(isset($_SESSION["Shopping_Cart"]))
+						if(isset($_SESSION["Shopping_Cart"]) && count($_SESSION["Shopping_Cart"]->Get_Items()) > 0)
 						{
 							$session_Cart = $_SESSION["Shopping_Cart"];
 							$session_Qty_List = $session_Cart->Get_Qty_List();
@@ -142,7 +142,7 @@
                </table>
               </div>
 			   <?php 
-				if(isset($_SESSION["Shopping_Cart"]))
+				if(isset($_SESSION["Shopping_Cart"]) && count($_SESSION["Shopping_Cart"]->Get_Items()) > 0)
 				{
 					echo "<div class='cells-sm-5 cell-lg-6 cell-xl-5 text-sm-right small-space-top'>";
 					  echo  "<ul class='inline-list'>";
@@ -177,7 +177,7 @@
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
-
+	<script src="js/shopping_cart.js"></script>
 	<script src="js/custom_home.js"></script>
   </body>
 </html>

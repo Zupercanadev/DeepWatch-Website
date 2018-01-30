@@ -256,6 +256,7 @@
 					<input type="hidden" value="Monthly" name="plan_type"/>
 					<input type="hidden" value="five_monthly" name="plan_id"/>
 					<input type="hidden" value="Five devices, monthly plan."/>
+					<input type="hidden" value="Five devices monthly plan." name="plan_description"/>
 				    <button class="button button-sm button-secondary button-nina">Get DeepWatch</button>
 				  </form>
                 </div>

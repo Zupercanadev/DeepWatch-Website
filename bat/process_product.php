@@ -46,7 +46,7 @@
 	}
 	
 
-	//header("Location: ../cart.php");
+	header("Location: ../cart.php");
 	
 
 ?>
