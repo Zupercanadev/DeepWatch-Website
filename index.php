@@ -437,7 +437,7 @@
 					
                     <div class="cell-xs-6 cell-sm-3 cell-md-6">
                       <div class="counter-wrap"><span class="icon icon-secondary mdi mdi-clock"></span>
-                        <div class="heading-3"><span class="counter" data-step="3000">300000</span></div>
+                        <div class="heading-3"><span class="counter" data-step="3000">400000</span></div>
                         <p>Images Scanned</p>
                       </div>
                     </div>

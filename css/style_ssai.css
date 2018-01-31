@@ -34057,7 +34057,10 @@ img.mfp-img {
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
-
+.sml-space-left
+{
+	padding-left: 10px;
+}
 .justify-center
 {
 	justify-content:  center;

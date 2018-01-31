@@ -101,6 +101,7 @@
                      <th>Product</th>
                      <th>Price</th>
                      <th>Quantity</th>
+					 <th></th>
                    </tr>
                  </thead>
 				 <tbody>
@@ -119,7 +120,11 @@
 										echo $counter;
 									echo "</td>";
 									echo "<td>";
-										echo $product->Get_Name() . " " . $product->Get_Type();
+										echo "<div class='unit unit-horizontal unit-middle'>";
+											echo "<div class='unit-body'>";
+												echo $product->Get_Name() . " " . $product->Get_Type();
+											echo "</div>";
+										echo "</div>";
 									echo "</td>";
 									echo "<td>";
 										echo $product->Get_Price();
@@ -128,6 +133,9 @@
 										echo "<div class='form-wrap box-width-1 shop-input'>";
 											echo "<input name='". $product->Get_Id() ."' id='input_Test' type='number' min='0' max='10' value='" . $session_Qty_List[$product->Get_Id()] . "'>";
 										echo "</div>";
+									echo "</td>";
+									echo "<td>";
+										echo "<a class='icon mdi mdi-close icon-md-middle icon-gray-1 sml-space-left' href='#'></a>";
 									echo "</td>";
 								
 								
@@ -151,16 +159,18 @@
 					  echo  "<ul class='inline-list'>";
 						echo  "<li class='text-middle'>";
 						  echo "<div class='text-regular'>"; 
-							echo "<button type='submit'>Update Cart </button>";
+							echo "<button type='submit' class='button button-xs button-default-outline button-nina'>Update Cart </button>";
 							echo "</form>";
 						  echo "</div>";
 						echo  "</li>";
 						echo  "<li class='text-middle'>";
 						  echo "<div id='total_Calculation_div' class='text-bold'>Total: $" . $session_Cart->Get_Total() . "</div>";
 						echo "</li>";
-						echo  "<li class='text-middle'><a class='button form-button button-sm button-secondary button-nina' href='checkout.html'>checkout</a></li>";
 					  echo "</ul>";
 					echo  "</div>";
+					echo "<div class='cells-sm-5 cell-lg-6 cell-xl-5 text-sm-right small-space-top'>";
+					echo "<a class='button form-button button-sm button-secondary button-nina' href='checkout.html'>checkout</a>";
+					echo "</div>";
 				}
 			  ?>
             </div>
