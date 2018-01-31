@@ -94,7 +94,7 @@
          <div class="range range-md-center">
            <div class="cell-lg-11 cell-xl-8">
              <div class="table-novi table-custom-responsive table-shop-responsive">
-               <table class="table-custom">
+               <table class="table-custom table-shop">
                  <thead>
                    <tr>
                      <th>#</th>
@@ -131,7 +131,7 @@
 									echo "</td>";
 									echo "<td>";
 										echo "<div class='form-wrap box-width-1 shop-input'>";
-											echo "<input name='". $product->Get_Id() ."' id='input_Test' type='number' min='0' max='10' value='" . $session_Qty_List[$product->Get_Id()] . "'>";
+											echo "<input class='form-input input-append' name='". $product->Get_Id() ."' id='input_Test' type='number' min='0' max='10' value='" . $session_Qty_List[$product->Get_Id()] . "'>";
 										echo "</div>";
 									echo "</td>";
 									echo "<td>";
@@ -155,6 +155,7 @@
 			   <?php 
 				if(isset($_SESSION["Shopping_Cart"]) && count($_SESSION["Shopping_Cart"]->Get_Items()) > 0)
 				{
+					echo "<div class='range range-justify range-sm-middle text-center'>";
 					echo "<div class='cells-sm-5 cell-lg-6 cell-xl-5 text-sm-right small-space-top'>";
 					  echo  "<ul class='inline-list'>";
 						echo  "<li class='text-middle'>";
@@ -163,13 +164,17 @@
 							echo "</form>";
 						  echo "</div>";
 						echo  "</li>";
-						echo  "<li class='text-middle'>";
-						  echo "<div id='total_Calculation_div' class='text-bold'>Total: $" . $session_Cart->Get_Total() . "</div>";
-						echo "</li>";
 					  echo "</ul>";
 					echo  "</div>";
 					echo "<div class='cells-sm-5 cell-lg-6 cell-xl-5 text-sm-right small-space-top'>";
-					echo "<a class='button form-button button-sm button-secondary button-nina' href='checkout.html'>checkout</a>";
+						echo  "<ul class='inline-list'>";
+							echo  "<li class='text-middle'>";
+								echo "<div id='total_Calculation_div' class='text-bold'>Total: $" . $session_Cart->Get_Total() . "</div>";
+							echo "</li>";
+							echo  "<li class='text-middle'>";
+								echo "<a class='button form-button button-sm button-secondary button-nina' href='checkout.html'>checkout</a>";
+							echo "</li>";
+						echo "<ul>";
 					echo "</div>";
 				}
 			  ?>
